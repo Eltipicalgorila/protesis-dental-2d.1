@@ -1,24 +1,35 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class ControlFrontera : MonoBehaviour
 {
-    public int humanosEntraron;
-    public int monstruosEntraron;
+    public float humanosEntraron,monstruosEntraron;
+    public GameObject[] personas; // Arrastra aquí tus 4 personajes (desactivados)
 
-    public void DejarPasar(Persona persona)
+
+
+
+    public void DejarPasar()
     {
-        if (persona.persona)
+        for (int i = 0; i < personas.Length; i++)
         {
-            humanosEntraron++;
-            Debug.Log("Entró un HUMANO");
-        }
-        else
-        {
-            monstruosEntraron++;
-            Debug.Log("⚠️ Entró un MONSTRUO");
-        }
+            // Activar la persona
+            personas[i].gameObject.SetActive(true);
 
-        // Aquí podrías destruir o mover al NPC
-        Destroy(persona.gameObject);
+            // Procesar si es humano o monstruo
+            if (personas[i])
+            {
+                humanosEntraron++;
+                Debug.Log("Entró un HUMANO");
+            }
+            else
+            {
+                monstruosEntraron++;
+                Debug.Log("⚠️ Entró un MONSTRUO");
+            }
+            personas[i].gameObject.SetActive(false);
+        }
     }
 }
+
+
