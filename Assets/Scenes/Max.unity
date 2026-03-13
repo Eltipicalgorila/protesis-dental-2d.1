@@ -236,14 +236,13 @@ GameObject:
   - component: {fileID: 324669142}
   - component: {fileID: 324669141}
   - component: {fileID: 324669140}
-  - component: {fileID: 324669143}
   m_Layer: 5
   m_Name: Persona4
-  m_TagString: Untagged
+  m_TagString: Humano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &324669140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,19 +300,6 @@ RectTransform:
   m_AnchoredPosition: {x: -137.6, y: 68.8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &324669143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324669138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ea6b7adce5a20d458e40b51cb7e9060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Persona
-  persona: 1
 --- !u!1 &455901063
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,10 +983,10 @@ MonoBehaviour:
   humanosEntraron: 0
   monstruosEntraron: 0
   personas:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1323179375}
+  - {fileID: 1566309999}
+  - {fileID: 2145982050}
+  - {fileID: 324669138}
 --- !u!4 &1091934774
 Transform:
   m_ObjectHideFlags: 0
@@ -1135,8 +1121,6 @@ GameObject:
   - component: {fileID: 1323179376}
   - component: {fileID: 1323179379}
   - component: {fileID: 1323179378}
-  - component: {fileID: 1323179381}
-  - component: {fileID: 1323179380}
   m_Layer: 5
   m_Name: Persona1
   m_TagString: Untagged
@@ -1201,32 +1185,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323179375}
   m_CullTransparentMesh: 1
---- !u!114 &1323179380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323179375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ea6b7adce5a20d458e40b51cb7e9060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Persona
-  persona: 0
---- !u!114 &1323179381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323179375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ea6b7adce5a20d458e40b51cb7e9060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Persona
-  persona: 1
 --- !u!1 &1478746928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,14 +1275,13 @@ GameObject:
   - component: {fileID: 1566310000}
   - component: {fileID: 1566310002}
   - component: {fileID: 1566310001}
-  - component: {fileID: 1566310003}
   m_Layer: 5
   m_Name: Persona2
-  m_TagString: Untagged
+  m_TagString: Humano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1566310000
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1382,19 +1339,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566309999}
   m_CullTransparentMesh: 1
---- !u!114 &1566310003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1566309999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ea6b7adce5a20d458e40b51cb7e9060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Persona
-  persona: 1
 --- !u!1 &1979420517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,14 +1486,13 @@ GameObject:
   - component: {fileID: 2145982051}
   - component: {fileID: 2145982053}
   - component: {fileID: 2145982052}
-  - component: {fileID: 2145982054}
   m_Layer: 5
   m_Name: Persona3
-  m_TagString: Untagged
+  m_TagString: Humano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2145982051
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1607,19 +1550,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145982050}
   m_CullTransparentMesh: 1
---- !u!114 &2145982054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145982050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ea6b7adce5a20d458e40b51cb7e9060, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Persona
-  persona: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
