@@ -47,4 +47,25 @@ public class ControlFrontera : MonoBehaviour
             Debug.Log("No quedan más personas");
         }
     }
+    public void NoDejarPasar()
+    {
+        if (personaActual >= personas.Length) return;
+
+        GameObject persona = personas[personaActual];
+
+        // Procesar si es humano o monstruo
+
+        persona.SetActive(false);
+
+        personaActual++;
+
+        if (personaActual < personas.Length)
+        {
+            personas[personaActual].SetActive(true);
+        }
+        else
+        {
+            Debug.Log("No quedan más personas");
+        }
+    }
 }

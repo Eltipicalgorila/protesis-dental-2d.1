@@ -6,5 +6,6 @@ public class NoDejarPasar : MonoBehaviour
 
     public void NoPasa()
     {
+        control.NoDejarPasar();
     }
 }
