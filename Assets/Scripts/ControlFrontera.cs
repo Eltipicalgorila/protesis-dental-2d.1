@@ -7,7 +7,7 @@ public class ControlFrontera : MonoBehaviour
 
     public GameObject[] personas;
 
-    int personaActual = 0;
+    public int personaActual = 0;
 
     void Start()
     {
