@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -95, y: 583}
+  m_AnchoredPosition: {x: -95, y: 487}
   m_SizeDelta: {x: 87.528, y: 42.7864}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15112112
@@ -282,14 +282,14 @@ RectTransform:
   m_GameObject: {fileID: 117106708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.72527003, y: 0.81294, z: 0.6376}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1055303896}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1178, y: -64}
+  m_AnchoredPosition: {x: -845, y: 81}
   m_SizeDelta: {x: 87.528, y: 42.7864}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &117106710
@@ -377,7 +377,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -2336.7546, w: 0}
+  m_margin: {x: 0, y: 0, z: -2336.7546, w: -537.52344}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -425,7 +425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1178, y: 302}
+  m_AnchoredPosition: {x: -896, y: 302}
   m_SizeDelta: {x: 87.528, y: 42.7864}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &189607453
@@ -561,7 +561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1178, y: 196}
+  m_AnchoredPosition: {x: -880, y: 196}
   m_SizeDelta: {x: 87.528, y: 42.7864}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333926505
@@ -992,18 +992,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e046139aebe967049a2110d345a7a467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Letras
-  textos:
-  - {fileID: 15112112}
-  - {fileID: 189607453}
-  - {fileID: 333926505}
-  - {fileID: 117106710}
-  mensajes:
-  - "D\xEDa 1 "
-  - 'Sospechosos: x'
-  - 'Personas: x'
-  - "Radio: Durante el dia no se ha registrado ning\xFAn mounstruo. Feliz dia de
-    lo opuesto campe\xF3n,  comprate unas gafas  "
-  delay: 0.08
+  texto1: {fileID: 15112112}
+  texto2: {fileID: 189607453}
+  texto3: {fileID: 333926505}
+  texto4: {fileID: 117106710}
+  Humanos: 3
+  Monstruos: 5
+  delay: 0.05
 --- !u!4 &787486769
 Transform:
   m_ObjectHideFlags: 0
