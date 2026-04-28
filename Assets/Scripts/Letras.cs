@@ -5,8 +5,8 @@ using TMPro;
 public class Letras : MonoBehaviour
 {
     public TextMeshProUGUI texto1, texto2, texto3, texto4;
-    public int Humanos;
-    public int Monstruos;
+    public float Humanos;
+    public float Monstruos;
 
     public float delay = 0.05f;
 
@@ -17,6 +17,7 @@ public class Letras : MonoBehaviour
 
     IEnumerator SecuenciaTexto()
     {
+
         // Guardamos los textos en variables
         string t1 = "Dia 1";
         string t2 = "Humanos : " + Humanos;

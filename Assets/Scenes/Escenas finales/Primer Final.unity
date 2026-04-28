@@ -1116,8 +1116,9 @@ MonoBehaviour:
   texto2: {fileID: 189607453}
   texto3: {fileID: 333926505}
   texto4: {fileID: 117106710}
-  Humanos: 3
-  Monstruos: 5
+  Humanos: 0
+  Monstruos: 0
+  Cantidad: {fileID: 0}
   delay: 0.05
 --- !u!4 &787486769
 Transform:

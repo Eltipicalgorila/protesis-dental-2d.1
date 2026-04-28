@@ -304,6 +304,11 @@ MonoBehaviour:
   - {fileID: 984451124}
   - {fileID: 1577473060}
   - {fileID: 1753476906}
+  imagenes:
+  - {fileID: 904029362}
+  - {fileID: 425534783}
+  - {fileID: 856757619}
+  - {fileID: 634392822}
   personaActual: 0
 --- !u!4 &82912448
 Transform:

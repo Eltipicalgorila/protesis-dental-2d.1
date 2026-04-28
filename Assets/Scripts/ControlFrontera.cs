@@ -6,7 +6,8 @@ public class ControlFrontera : MonoBehaviour
     public float humanosEntraron, monstruosEntraron;
 
     public GameObject[] personas;
-
+    public GameObject[] imagenes;
+    private int indiceActual = 0;
     public int personaActual = 0;
 
     void Start()
@@ -46,6 +47,9 @@ public class ControlFrontera : MonoBehaviour
         {
             Debug.Log("No quedan más personas");
         }
+        imagenes[indiceActual].SetActive(false);
+        indiceActual++;
+        imagenes[indiceActual].SetActive(true);
     }
     public void NoDejarPasar()
     {
@@ -67,5 +71,8 @@ public class ControlFrontera : MonoBehaviour
         {
             Debug.Log("No quedan más personas");
         }
+        imagenes[indiceActual].SetActive(false);
+        indiceActual++;
+        imagenes[indiceActual].SetActive(true);
     }
 }

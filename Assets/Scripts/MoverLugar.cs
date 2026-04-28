@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoverLugar : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class MoverLugar : MonoBehaviour
         }
         else 
         {
-            Debug.Log("Pasaste el nivel");
+            SceneManager.LoadScene("Primer Final");
         }
     }
 }
