@@ -17,4 +17,8 @@ public class CambioEscenaMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Nivel1");
     }
+    public void Leave()
+    {
+        Application.Quit();
+    }
 }
