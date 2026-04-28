@@ -45,7 +45,8 @@ public class ControlFrontera : MonoBehaviour
         }
         else
         {
-            Debug.Log("No quedan más personas");
+            GameManager.instancia.humanos = humanosEntraron;
+            GameManager.instancia.monstruos = monstruosEntraron;
         }
         imagenes[indiceActual].SetActive(false);
         indiceActual++;
@@ -69,7 +70,8 @@ public class ControlFrontera : MonoBehaviour
         }
         else
         {
-            Debug.Log("No quedan más personas");
+            GameManager.instancia.humanos = humanosEntraron;
+            GameManager.instancia.monstruos = monstruosEntraron;
         }
         imagenes[indiceActual].SetActive(false);
         indiceActual++;

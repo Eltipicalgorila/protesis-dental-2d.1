@@ -12,6 +12,8 @@ public class Letras : MonoBehaviour
 
     void Start()
     {
+        Humanos = GameManager.instancia.humanos;
+        Monstruos = GameManager.instancia.monstruos;
         StartCoroutine(SecuenciaTexto());
     }
 
