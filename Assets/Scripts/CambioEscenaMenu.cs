@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CambioEscenaMenu : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -12,5 +12,9 @@ public class CambioEscenaMenu : MonoBehaviour
     void Update()
     {
         
+    }
+    public void Play()
+    {
+        SceneManager.LoadScene("Nivel1");
     }
 }
