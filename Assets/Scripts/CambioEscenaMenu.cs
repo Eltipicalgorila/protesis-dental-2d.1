@@ -21,4 +21,8 @@ public class CambioEscenaMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Level2()
+    {
+        SceneManager.LoadScene("Nivel2");
+    }
 }
