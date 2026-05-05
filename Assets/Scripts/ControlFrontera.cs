@@ -7,8 +7,13 @@ public class ControlFrontera : MonoBehaviour
 
     public GameObject[] personas;
     public GameObject[] imagenes;
+    public GameObject[] Documento;
+    public GameObject[] Dientes;
     private int indiceActual = 0;
     public int personaActual = 0;
+    private int indiceActualDoc = 0;
+    private int indiceActualDien = 0;
+
 
     void Start()
     {
@@ -48,9 +53,20 @@ public class ControlFrontera : MonoBehaviour
             GameManager.instancia.humanos = humanosEntraron;
             GameManager.instancia.monstruos = monstruosEntraron;
         }
+        if (indiceActual >= imagenes.Length - 1) return;
         imagenes[indiceActual].SetActive(false);
         indiceActual++;
         imagenes[indiceActual].SetActive(true);
+
+        if (indiceActualDoc >= Documento.Length - 1) return;
+        Documento[indiceActualDoc].SetActive(false);
+        indiceActualDoc++;
+        Documento[indiceActualDoc].SetActive(true);
+
+        if (indiceActualDien >= Dientes.Length - 1) return;
+        Dientes[indiceActualDien].SetActive(false);
+        indiceActualDien++;
+        Dientes[indiceActualDien].SetActive(true);
     }
     public void NoDejarPasar()
     {
@@ -73,8 +89,19 @@ public class ControlFrontera : MonoBehaviour
             GameManager.instancia.humanos = humanosEntraron;
             GameManager.instancia.monstruos = monstruosEntraron;
         }
+        if (indiceActual >= imagenes.Length - 1) return;
         imagenes[indiceActual].SetActive(false);
         indiceActual++;
         imagenes[indiceActual].SetActive(true);
+
+        if (indiceActualDoc >= Documento.Length - 1) return;
+        Documento[indiceActualDoc].SetActive(false);
+        indiceActualDoc++;
+        Documento[indiceActualDoc].SetActive(true);
+
+        if (indiceActualDien >= Dientes.Length - 1) return;
+        Dientes[indiceActualDien].SetActive(false);
+        indiceActualDien++;
+        Dientes[indiceActualDien].SetActive(true);
     }
 }
