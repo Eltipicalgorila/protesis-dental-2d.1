@@ -267,6 +267,7 @@ MonoBehaviour:
   Escritorio: {fileID: 2020426680}
   Habitacion: {fileID: 1060647137}
   Ventana: {fileID: 1531303094}
+  NoDormir: {fileID: 0}
   NumPersonas: {fileID: 82912447}
 --- !u!1 &82912446
 GameObject:
@@ -319,6 +320,7 @@ MonoBehaviour:
   - {fileID: 1283012708}
   - {fileID: 1656304999}
   - {fileID: 1463055504}
+  Acabaste: {fileID: 0}
   personaActual: 0
 --- !u!4 &82912448
 Transform:
@@ -1300,7 +1302,7 @@ GameObject:
   - component: {fileID: 684686430}
   m_Layer: 5
   m_Name: Persona1
-  m_TagString: Untagged
+  m_TagString: Humano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1344,7 +1346,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8328749727595761474, guid: 190994a0f90340c4e8b51b7c7edeeae2, type: 3}
+  m_Sprite: {fileID: 6540765067714728593, guid: e266eddd548db0c408522ad271c41225, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1532,6 +1534,7 @@ MonoBehaviour:
   Escritorio: {fileID: 2020426680}
   Habitacion: {fileID: 1060647137}
   Ventana: {fileID: 1531303094}
+  NoDormir: {fileID: 0}
   NumPersonas: {fileID: 82912447}
 --- !u!1 &856757619
 GameObject:
@@ -1909,7 +1912,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7117284234184097400, guid: f554971afb2e1e54f8eb2504fb0cc4d9, type: 3}
+  m_Sprite: {fileID: 2137562754266803506, guid: 0e89302fb8660e94c845c1030c46dfce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2550,6 +2553,7 @@ MonoBehaviour:
   Escritorio: {fileID: 2020426680}
   Habitacion: {fileID: 1060647137}
   Ventana: {fileID: 1531303094}
+  NoDormir: {fileID: 0}
   NumPersonas: {fileID: 82912447}
 --- !u!1 &1399493683
 GameObject:
@@ -2958,6 +2962,7 @@ MonoBehaviour:
   Escritorio: {fileID: 2020426680}
   Habitacion: {fileID: 1060647137}
   Ventana: {fileID: 1531303094}
+  NoDormir: {fileID: 0}
   NumPersonas: {fileID: 82912447}
 --- !u!1 &1531303094
 GameObject:
@@ -3075,7 +3080,7 @@ GameObject:
   - component: {fileID: 1577473062}
   m_Layer: 5
   m_Name: Persona3
-  m_TagString: Humano
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3119,7 +3124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1314662532288793723, guid: 2ebcc0aac742cfd40b2f2e4d5f97db64, type: 3}
+  m_Sprite: {fileID: -8911782680539289154, guid: bf7abe06e5415f34984384a4cbd9745b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3737,6 +3742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VerInformacion
   Modo: 0
   Informativo: {fileID: 1586866834}
+  tutorial: {fileID: 0}
 --- !u!1 &1753476906
 GameObject:
   m_ObjectHideFlags: 0
@@ -3794,7 +3800,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5018609999134380192, guid: 7b352376866e64a4fa29e91efe0e73e6, type: 3}
+  m_Sprite: {fileID: -9202989724069437108, guid: 90c7cd68155010e4ab7c237398bf146e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3964,6 +3970,7 @@ MonoBehaviour:
   Escritorio: {fileID: 2020426680}
   Habitacion: {fileID: 1060647137}
   Ventana: {fileID: 1531303094}
+  NoDormir: {fileID: 0}
   NumPersonas: {fileID: 82912447}
 --- !u!114 &1872193070
 MonoBehaviour:
