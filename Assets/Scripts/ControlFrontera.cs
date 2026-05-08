@@ -9,6 +9,7 @@ public class ControlFrontera : MonoBehaviour
     public GameObject[] imagenes;
     public GameObject[] Documento;
     public GameObject[] Dientes;
+    public GameObject Acabaste;
     private int indiceActual = 0;
     public int personaActual = 0;
     private int indiceActualDoc = 0;
@@ -20,6 +21,7 @@ public class ControlFrontera : MonoBehaviour
         // Activamos solo la primera persona
         if (personas.Length > 0)
             personas[personaActual].SetActive(true);
+        Acabaste.gameObject.SetActive(false);
     }
 
     public void DejarPasar()
@@ -52,6 +54,8 @@ public class ControlFrontera : MonoBehaviour
         {
             GameManager.instancia.humanos = humanosEntraron;
             GameManager.instancia.monstruos = monstruosEntraron;
+            Acabaste.gameObject.SetActive(true);
+
         }
         if (indiceActual >= imagenes.Length - 1) return;
         imagenes[indiceActual].SetActive(false);
@@ -88,6 +92,7 @@ public class ControlFrontera : MonoBehaviour
         {
             GameManager.instancia.humanos = humanosEntraron;
             GameManager.instancia.monstruos = monstruosEntraron;
+            Acabaste.gameObject.SetActive(true);
         }
         if (indiceActual >= imagenes.Length - 1) return;
         imagenes[indiceActual].SetActive(false);

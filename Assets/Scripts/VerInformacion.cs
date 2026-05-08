@@ -3,7 +3,7 @@ using UnityEngine;
 public class VerInformacion : MonoBehaviour
 {
    public bool Modo = false;
-    public GameObject Informativo;
+    public GameObject Informativo, tutorial;
     void Start()
     {
         
@@ -14,10 +14,12 @@ public class VerInformacion : MonoBehaviour
         if (Modo == false)
         {
             Informativo.gameObject.SetActive(false);
+            tutorial.gameObject.SetActive(true);
         }
         if (Modo == true)
         {
             Informativo.gameObject.SetActive(true);
+            tutorial.gameObject.SetActive(false);
         }
     }
     public void Boton()

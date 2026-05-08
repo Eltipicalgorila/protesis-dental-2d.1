@@ -29,11 +29,11 @@ public class Letras : MonoBehaviour
         // TU LÓGICA (sin cambiarla mucho)
         if (Humanos == 0 && Monstruos == 0)
         {
-            t4 = "Durante el día no se presencio nada de vida, solo llegaste a la vida y solo te irás de él,... Los soldados te dan el periodico y ves como los accidentes e incidentes bajan la poblacion del país";
+            t4 = "Durante el dia no se presencio nada de vida, solo llegaste a la vida y solo te iras de él,... Los soldados te dan el periodico y ves como los accidentes e incidentes bajan la poblacion del pais";
         }
         else if (Humanos > 0 && Humanos < 3 && Monstruos == 0)
         {
-            t4 = "Últimamente no se registró ningun monstruo... Sin embargo, te sientes como un monstruo por no haber dejado pasar a los que faltaba, en la radio escuchas algunos informes sobre quejas de personas que no pudieron pasar la frontera. Los soldados estan mas pendientes";
+            t4 = "Últimamente no se registró ningun monstruo... Sin embargo, te sientes raro por tus acciones, en la radio escuchas algunos informes sobre quejas de personas que no pudieron pasar la frontera. Los soldados estan mas pendientes";
         }
         else if (Humanos == 3 && Monstruos == 0)
         {
@@ -49,7 +49,7 @@ public class Letras : MonoBehaviour
         }
         else if (Humanos == 3 && Monstruos > 0)
         {
-            t4 = "En la radio se habla de una asamblea de muchas personas atacando a varios barrios, se empieza a mencionar que, por sus rasgos, parecen que no son humanos de verdad y empiezan a denominarlos como monstruos. Después de escuchar la radio, decides asomar la cabeza y ves como uno de los soldados se lo lleva el equipo medico por varios ataques recibidos. El otro sigue con su trabajo, pero se le ve asustado";
+            t4 = "En la radio se habla de una asamblea de varios monstruos atacando los pueblos, tambien hablan de que la mayoria de heridos padezen de mordidas pero nunca antes vistas. Después de escuchar la radio, decides asomar la cabeza y ves como uno de los soldados se lo lleva el equipo medico por varios ataques recibidos de mordida. El otro sigue con su trabajo, pero se le ve asustado";
    
         }
 

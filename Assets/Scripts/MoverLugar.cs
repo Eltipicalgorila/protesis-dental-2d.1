@@ -1,12 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MoverLugar : MonoBehaviour
 {
-    public GameObject Escritorio, Habitacion, Ventana;
+    public GameObject Escritorio, Habitacion, Ventana, NoDormir;
     public ControlFrontera NumPersonas;
     void Start()
     {
+        NoDormir.gameObject.SetActive(false);
     }
 
 
@@ -32,11 +35,17 @@ public class MoverLugar : MonoBehaviour
     {
         if (NumPersonas.personaActual < NumPersonas.personas.Length)
         {
-            Debug.Log("Necesitas terminar tu trabajo");
+            StartCoroutine(NoPuedesDormir());
         }
         else 
         {
             SceneManager.LoadScene("Primer Final");
         }
+    }
+    IEnumerator NoPuedesDormir ()
+    {
+        NoDormir.gameObject.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        NoDormir.gameObject.SetActive(false);
     }
 }
