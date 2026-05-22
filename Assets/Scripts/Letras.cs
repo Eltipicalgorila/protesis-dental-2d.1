@@ -14,7 +14,7 @@ public class Letras : MonoBehaviour
     {
         Humanos = GameManager.instancia.humanos;
         Monstruos = GameManager.instancia.monstruos;
-        StartCoroutine(SecuenciaTexto());
+            StartCoroutine(SecuenciaTexto());
     }
 
     IEnumerator SecuenciaTexto()
@@ -62,7 +62,6 @@ public class Letras : MonoBehaviour
             t4 = "En la radio se habla de una asamblea de muchas personas atacando a varios barrios, se empieza a mencionar que, por sus rasgos, parecen que no son humanos de verdad y empiezan a denominarlos como monstruos. Despues de escuchar la radio, decides asomar la cabeza y ves como uno de los soldados se lo lleva el equipo medico por varios ataques recibidos. El otro sigue con su trabajo, pero se le ve asustado";
         }
 
-       
         yield return StartCoroutine(EscribirTexto(texto1, t1));
         yield return new WaitForSeconds(0.3f);
 
