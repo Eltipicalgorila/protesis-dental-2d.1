@@ -1,28 +1,48 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Collections.Generic;
 
 public class CambiarImagen : MonoBehaviour
 {
-    public Image imagenUI;
-    public Sprite[] imagenes;
+    public Image[] imagenes;
     public string nombreEscena;
 
+    private int index = 0;
     private int clicks = 1;
 
-    public void AlPulsarBoton()
+    void Start()
     {
-        if (clicks < imagenes.Length)
+        // Apagar todas
+        for (int i = 0; i < imagenes.Length; i++)
         {
-            imagenUI.sprite = imagenes[clicks];
-            imagenUI.SetNativeSize();
+            imagenes[i].gameObject.SetActive(false);
+        }
+
+        // Mostrar la primera
+        if (imagenes.Length > 0)
+            imagenes[0].gameObject.SetActive(true);
+    }
+
+    public void Cambiar()
+    {
+        clicks++;
+
+        // Si aún estamos dentro de las 3 imágenes
+        if (clicks <= imagenes.Length)
+        {
+            imagenes[index].gameObject.SetActive(false);
+
+            index++;
+
+            if (index < imagenes.Length)
+            {
+                imagenes[index].gameObject.SetActive(true);
+            }
         }
         else
         {
-            SceneManager.LoadScene("Nivel1");
+            // 4º click → cambiar escena
+            SceneManager.LoadScene(nombreEscena);
         }
-
-        clicks++;
     }
 }
