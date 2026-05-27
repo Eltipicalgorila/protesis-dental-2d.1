@@ -1,19 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class CambioEscenaMenu : MonoBehaviour
+
+public class Fina : MonoBehaviour
 {
     public Vidas Resultado;
     public string Final;
-    public float CuantoMostruosEntraron;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(Resultado.VerResultadoFinal);
         if (Resultado.VerResultadoFinal == 0)
         {
             Final = "FinalBueno";
@@ -27,21 +21,11 @@ public class CambioEscenaMenu : MonoBehaviour
             Final = "FinalMalo";
         }
     }
-    public void Play()
+
+    // Update is called once per frame
+    void Update()
     {
-        SceneManager.LoadScene("Nivel1");
-    }
-    public void Leave()
-    {
-        Application.Quit();
-    }
-    public void Level2()
-    {
-        SceneManager.LoadScene("Nivel2");
-    }
-    public void Level3()
-    {
-        SceneManager.LoadScene("Nivel3");
+        
     }
     public void SeAcabo()
     {

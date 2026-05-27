@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel1.unity
     guid: 68ed95ff1e0bde147bbcf13295b85f73
   - enabled: 1
-    path: Assets/Scenes/Escenas finales/Primer Final.unity
+    path: Assets/Scenes/Escenas finales/PrimerFinal.unity
     guid: 1c981850a4becb5409ca3f43dc77e415
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

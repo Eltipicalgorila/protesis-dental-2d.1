@@ -7,13 +7,14 @@ public class Letras : MonoBehaviour
     public TextMeshProUGUI texto1, texto2, texto3, texto4;
     public float Humanos;
     public float Monstruos;
+    public string QueDIA;
 
     public float delay = 0.05f;
 
     void Start()
     {
-        Humanos = GameManager.instancia.humanos;
-        Monstruos = GameManager.instancia.monstruos;
+        Humanos = GameManager.instancia.humanos+ Humanos;
+        Monstruos = GameManager.instancia.monstruos+Monstruos;
             StartCoroutine(SecuenciaTexto());
     }
 
@@ -21,7 +22,7 @@ public class Letras : MonoBehaviour
     {
 
        
-        string t1 = "Dia 1";
+        string t1 = "Dia " + QueDIA;
         string t2 = "Humanos : " + Humanos;
         string t3 = "Monstruos : " + Monstruos;
         string t4 = "";
@@ -34,7 +35,7 @@ public class Letras : MonoBehaviour
         }
         else if (Humanos > 0 && Humanos < 3 && Monstruos == 0)
         {
-            t4 = "Últimamente no se registró ningun monstruo... Sin embargo, te sientes raro por tus acciones, en la radio escuchas algunos informes sobre quejas de personas que no pudieron pasar la frontera. Los soldados estan mas pendientes";
+            t4 = "Últimamente no se registró ningun monstruo, en la radio escuchas algunos informes sobre quejas de personas que no pudieron pasar la frontera. Los soldados estan mas pendientes";
 
             t4 = "Durante el dia no se presencio nada de vida, solo llegaste a la vida y solo te iras de el,... Los soldados te dan el periodico y ves como los accidentes e incidentes bajan la poblacion del pais";
         }
@@ -45,7 +46,7 @@ public class Letras : MonoBehaviour
         }
         else if (Humanos == 3 && Monstruos == 0)
         {
-            t4 = "Entre todas las personas que pasaron, reconoces al hermano de un amigo tuyo, te alegras bastante de que este vivo y haya podido pasar la frontera. Los soldados bajan la guardia y empiezan a hablar entre ellos, desde la ventana escuchas que hablan sobre algunos datos que esconde el gobierno sobre los informes de los dentistas de las personas ¿Que tendra que ver eso con los rumores de los monstruos?";
+            t4 = "Entre todas las personas que pasaron, reconoces al hermano de un amigo tuyo, te alegras bastante de que este vivo y haya podido pasar la frontera. Los soldados bajan la guardia";
         }
         else if (Humanos == 0 && Monstruos > 0)
         {
@@ -53,13 +54,12 @@ public class Letras : MonoBehaviour
         }
         else if (Humanos > 0 && Humanos < 3 && Monstruos > 0)
         {
-            t4 = "Durante el dia se ha notificado personas con aspecto monstruoso atacando gente y soldados,entre ellos, uno de tus soldados quedo abatido, por lo que cuentas solo con uno para la guardia, no sabes porque pero, sientes que parte de esto es por tu culpa";
+            t4 = "Durante el dia se ha notificado personas con aspecto monstruoso atacando gente y soldados,asomas a la ventana y te falta 1 soldado";
         }
         else if (Humanos == 3 && Monstruos > 0)
         {
 
-            t4 = "En la radio se habla de una asamblea de varios monstruos atacando los pueblos, tambien hablan de que la mayoria de heridos padezen de mordidas pero nunca antes vistas. Después de escuchar la radio, decides asomar la cabeza y ves como uno de los soldados se lo lleva el equipo medico por varios ataques recibidos de mordida. El otro sigue con su trabajo, pero se le ve asustado";
-            t4 = "En la radio se habla de una asamblea de muchas personas atacando a varios barrios, se empieza a mencionar que, por sus rasgos, parecen que no son humanos de verdad y empiezan a denominarlos como monstruos. Despues de escuchar la radio, decides asomar la cabeza y ves como uno de los soldados se lo lleva el equipo medico por varios ataques recibidos. El otro sigue con su trabajo, pero se le ve asustado";
+            t4 = "En la radio se habla de una asamblea de varios monstruos atacando, asomas la cabeza y ves que te falta 1 soldado";
         }
 
         yield return StartCoroutine(EscribirTexto(texto1, t1));

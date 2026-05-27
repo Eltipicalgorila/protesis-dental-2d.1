@@ -7,6 +7,7 @@ public class MoverLugar : MonoBehaviour
 {
     public GameObject Escritorio, Habitacion, Ventana, NoDormir;
     public ControlFrontera NumPersonas;
+    public string NivelPasar;
     void Start()
     {
         NoDormir.gameObject.SetActive(false);
@@ -39,7 +40,7 @@ public class MoverLugar : MonoBehaviour
         }
         else 
         {
-            SceneManager.LoadScene("Primer Final");
+            SceneManager.LoadScene(NivelPasar);
         }
     }
     IEnumerator NoPuedesDormir ()

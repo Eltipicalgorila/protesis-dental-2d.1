@@ -269,6 +269,7 @@ MonoBehaviour:
   Ventana: {fileID: 1531303094}
   NoDormir: {fileID: 0}
   NumPersonas: {fileID: 82912447}
+  NivelPasar: 
 --- !u!1 &82912446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2517,6 +2518,7 @@ MonoBehaviour:
   Ventana: {fileID: 1531303094}
   NoDormir: {fileID: 233993282}
   NumPersonas: {fileID: 82912447}
+  NivelPasar: PrimerFinal
 --- !u!1 &809871626
 GameObject:
   m_ObjectHideFlags: 0
@@ -4248,6 +4250,7 @@ MonoBehaviour:
   Ventana: {fileID: 1531303094}
   NoDormir: {fileID: 0}
   NumPersonas: {fileID: 82912447}
+  NivelPasar: 
 --- !u!1 &1399493683
 GameObject:
   m_ObjectHideFlags: 0
@@ -4732,6 +4735,7 @@ MonoBehaviour:
   Ventana: {fileID: 1531303094}
   NoDormir: {fileID: 0}
   NumPersonas: {fileID: 82912447}
+  NivelPasar: 
 --- !u!1 &1531303094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5879,6 +5883,7 @@ MonoBehaviour:
   Ventana: {fileID: 1531303094}
   NoDormir: {fileID: 0}
   NumPersonas: {fileID: 82912447}
+  NivelPasar: 
 --- !u!114 &1872193070
 MonoBehaviour:
   m_ObjectHideFlags: 0

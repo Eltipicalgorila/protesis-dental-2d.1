@@ -4,6 +4,8 @@ public class Vidas : MonoBehaviour
 {
     public GameObject aciertos, inaciertos;
     public Letras montruo;
+    public static float resultadoFinal;
+    public float VerResultadoFinal;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,12 +18,13 @@ public class Vidas : MonoBehaviour
         {
             inaciertos.gameObject.SetActive(true);
             Debug.Log("Mala");
+            resultadoFinal = resultadoFinal + 1;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        VerResultadoFinal = resultadoFinal;
     }
 }

@@ -400,6 +400,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5c9ac880bacb947afa3fab6032e5c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscenaMenu
+  Resultado: {fileID: 0}
+  Final: 
+  CuantoMostruosEntraron: 0
 --- !u!1 &117106708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1297,7 @@ MonoBehaviour:
   texto4: {fileID: 117106710}
   Humanos: 0
   Monstruos: 0
+  QueDIA: 1
   delay: 0.05
 --- !u!4 &787486769
 Transform:
@@ -1325,6 +1329,7 @@ MonoBehaviour:
   aciertos: {fileID: 316888159}
   inaciertos: {fileID: 1025662606}
   montruo: {fileID: 787486768}
+  VerResultadoFinal: 0
 --- !u!1 &1025662606
 GameObject:
   m_ObjectHideFlags: 0
