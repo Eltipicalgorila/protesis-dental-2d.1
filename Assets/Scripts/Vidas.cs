@@ -9,7 +9,7 @@ public class Vidas : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (montruo.Monstruos <= 0)
+        if (montruo.Monstruos <= 0 & montruo.Humanos == 3)
         {
             aciertos.gameObject.SetActive(true);
             Debug.Log("Buena");
@@ -26,5 +26,9 @@ public class Vidas : MonoBehaviour
     void Update()
     {
         VerResultadoFinal = resultadoFinal;
+    }
+    public void Reinicio()
+    {
+        resultadoFinal = 0;
     }
 }

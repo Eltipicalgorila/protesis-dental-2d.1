@@ -683,7 +683,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1103499943}
         m_TargetAssemblyTypeName: CambioEscenaMenu, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: Inicio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -743,6 +743,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5c9ac880bacb947afa3fab6032e5c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscenaMenu
+  Resultado: {fileID: 0}
+  Final: 
+  CuantoMostruosEntraron: 0
 --- !u!1 &1941816627
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +891,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5c9ac880bacb947afa3fab6032e5c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscenaMenu
+  Resultado: {fileID: 0}
+  Final: 
+  CuantoMostruosEntraron: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

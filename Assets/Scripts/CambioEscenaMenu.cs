@@ -33,7 +33,7 @@ public class CambioEscenaMenu : MonoBehaviour
     }
     public void Leave()
     {
-        Application.Quit();
+        Debug.Log("Salieste del juego");
     }
     public void Level2()
     {
@@ -45,6 +45,14 @@ public class CambioEscenaMenu : MonoBehaviour
     }
     public void SeAcabo()
     {
-        Debug.Log("Has sacado el " + Final);
+        SceneManager.LoadScene(Final);
+    }
+    public void Inicio()
+    {
+        SceneManager.LoadScene("Capitulo 1 escena");
+    }
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
