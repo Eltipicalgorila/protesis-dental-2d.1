@@ -5,6 +5,7 @@ public class CambioEscenaMenu : MonoBehaviour
     public Vidas Resultado;
     public string Final;
     public float CuantoMostruosEntraron;
+    public string Ilerna;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,7 +34,7 @@ public class CambioEscenaMenu : MonoBehaviour
     }
     public void Leave()
     {
-        Debug.Log("Salieste del juego");
+        SceneManager.LoadScene(Ilerna);
     }
     public void Level2()
     {
